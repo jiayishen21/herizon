@@ -1,18 +1,17 @@
 <script>
-	import Header from './Header.svelte';
+	import Navbar from './Navbar.svelte';
 	import '../app.css';
+	import Footer from './Footer.svelte';
 </script>
 
 <div class="app">
-	<Header />
+	<Navbar />
 
 	<main>
 		<slot />
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	<Footer />
 </div>
 
 <style>
@@ -26,11 +25,10 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
 		box-sizing: border-box;
+		width: 100%;
+		max-width: 1250px;
+		margin: 0 auto;
 	}
 
 	footer {
