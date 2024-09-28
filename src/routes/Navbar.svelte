@@ -4,14 +4,16 @@
 
 <nav>
 	<div class="container">
-		<img src={logo} alt="Herizon" class="logo" />
+		<a href="/">
+			<img src={logo} alt="Herizon" class="logo" />
+		</a>
 
 		<ul>
 			<li>
-				<a>Contact</a>
+				<a href="contact">Contact</a>
 			</li>
 			<li>
-				<a>Join us</a>
+				<a href="join">Join us</a>
 			</li>
 		</ul>
 	</div>
@@ -20,7 +22,7 @@
 <style>
 	nav {
 		width: 100%;
-		max-width: 900px;
+		max-width: 1000px;
 		margin: 0 auto;
 		border-bottom: var(--color-ghost-0) 2px solid;
 	}
@@ -43,5 +45,10 @@
 	.logo {
 		width: 45px;
 		height: 45px;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--color-black-0);
 	}
 </style>

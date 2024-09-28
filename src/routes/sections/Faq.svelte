@@ -2,7 +2,26 @@
 	import gradient0 from '$lib/images/gradient-0.webp';
 	import gradient0_fallback from '$lib/images/gradient-0.png';
 
-	const questionCount = 4;
+	const questionAnswers = [
+		{
+			question: 'How do I become a member?',
+			answer: 'You can become a member by signing up on our website.'
+		},
+		{
+			question: 'How do I become a member?',
+			answer: 'You can become a member by signing up on our website.'
+		},
+		{
+			question: 'How do I become a member?',
+			answer: 'You can become a member by signing up on our website.'
+		},
+		{
+			question: 'How do I become a member?',
+			answer: 'You can become a member by signing up on our website.'
+		}
+	];
+
+	const questionCount = questionAnswers.length;
 	let showDetails: boolean[] = Array(questionCount).fill(false);
 
 	const toggleDetails = (index: number) => {
@@ -21,31 +40,15 @@
 	</div>
 
 	<ul>
-		<li>
-			<button class="toggle-wrapper" on:click={() => toggleDetails(0)}>
-				<p class="question">How do I become a member</p>
-				<span class="toggle-question">+</span>
-			</button>
-			<div class={`answer ${showDetails[0] ? '' : 'hide-answer'}`}>LOl</div>
-		</li>
-		<li>
-			<button class="toggle-wrapper" on:click={() => toggleDetails(1)}>
-				<p class="question">How do I become a member</p>
-				<span class="toggle-question">+</span>
-			</button>
-		</li>
-		<li>
-			<button class="toggle-wrapper" on:click={() => toggleDetails(2)}>
-				<p class="question">How do I become a member</p>
-				<span class="toggle-question">+</span>
-			</button>
-		</li>
-		<li class="bottom-bar">
-			<button class="toggle-wrapper" on:click={() => toggleDetails(3)}>
-				<p class="question">How do I become a member</p>
-				<span class="toggle-question">+</span>
-			</button>
-		</li>
+		{#each questionAnswers as qa, index}
+			<li>
+				<button class="toggle-wrapper" on:click={() => toggleDetails(index)}>
+					<p class="question">{qa.question}</p>
+					<span class="toggle-question">{showDetails[index] ? '-' : '+'}</span>
+				</button>
+				<div class={`answer ${showDetails[index] ? '' : 'hide-answer'}`}>{qa.answer}</div>
+			</li>
+		{/each}
 	</ul>
 </section>
 
@@ -108,10 +111,11 @@
 
 	.toggle-question {
 		position: absolute;
-		top: -0.5rem;
+		top: -1.3rem;
 		right: 0;
-		font-size: 2rem;
-		font-weight: 700;
+		font-size: 3.75rem;
+		font-weight: 400;
+		font-family: var(--font-mono);
 	}
 
 	.answer {
