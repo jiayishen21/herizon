@@ -41,12 +41,16 @@
 
 	<ul>
 		{#each questionAnswers as qa, index}
-			<li>
+			<li class={index === questionCount - 1 ? 'bottom-bar' : ''}>
 				<button class="toggle-wrapper" on:click={() => toggleDetails(index)}>
 					<p class="question">{qa.question}</p>
 					<span class="toggle-question">{showDetails[index] ? '-' : '+'}</span>
 				</button>
-				<div class={`answer ${showDetails[index] ? '' : 'hide-answer'}`}>{qa.answer}</div>
+				<div class={`answer ${showDetails[index] ? '' : 'hide-answer'}`}>
+					<p>
+						{qa.answer}
+					</p>
+				</div>
 			</li>
 		{/each}
 	</ul>
@@ -82,7 +86,6 @@
 
 	ul {
 		list-style-type: none;
-		font-family: var(--font-mono);
 	}
 
 	li {
@@ -107,6 +110,7 @@
 
 	.question {
 		font-size: 1.5rem;
+		font-family: var(--font-mono);
 	}
 
 	.toggle-question {
@@ -119,16 +123,18 @@
 	}
 
 	.answer {
-		transition:
-			max-height 0.5s,
-			opacity 0.2s;
+		transition: max-height 0.3s ease;
 		max-height: 400px;
 		overflow: hidden;
-		opacity: 1;
+		font-size: 1.1rem;
+		font-family: var(--font-mono);
 	}
 
 	.hide-answer {
 		max-height: 0;
-		opacity: 0;
+	}
+
+	.answer p {
+		margin-top: 1rem;
 	}
 </style>

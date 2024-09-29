@@ -10,12 +10,12 @@
 
 		<ul>
 			<li>
-				<a href="">
+				<a href="https://www.linkedin.com/company/herizon-org/" target="_blank">
 					<img src={linkedin} alt="linkedin" />
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="https://www.xiaohongshu.com/user/profile/66a1f3aa000000001d0336e5" target="_blank">
 					<img src={xiaohongshu} alt="xiaohongshu" />
 				</a>
 			</li>

@@ -7,7 +7,7 @@
 	<div class="hero-container">
 		<picture class="hero">
 			<source srcset={gradient0} type="image/webp" />
-			<img src={gradient0_fallback} alt="heriozn hero" />
+			<img src={gradient0_fallback} alt="herizon hero" />
 		</picture>
 
 		<h1>Becoming.</h1>
