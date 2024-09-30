@@ -225,13 +225,13 @@
 
 	@media (max-width: 950px) {
 		h2 {
-			font-size: 3rem;
+			font-size: 2.9rem;
 			flex-direction: row;
-			height: 80px;
+			height: 70px;
 		}
 
 		.words {
-			height: 100px;
+			height: 100%;
 			padding-left: 10px;
 		}
 
@@ -261,7 +261,7 @@
 			display: flex;
 			position: absolute;
 			bottom: 2rem;
-			left: 3rem;
+			left: 2.5rem;
 			color: var(--color-white-0);
 		}
 
@@ -274,7 +274,7 @@
 		}
 	}
 
-	@media (max-width: 800px) {
+	@media (max-width: 768px) {
 		.banner-heading {
 			flex-direction: column;
 			height: 130px;
@@ -287,6 +287,15 @@
 
 		.desc {
 			padding: 0;
+		}
+
+		.container {
+			padding: 0 2rem;
+		}
+
+		.container p,
+		.container a {
+			font-size: 1.1rem;
 		}
 	}
 
@@ -303,6 +312,15 @@
 
 		.join-us-banner img {
 			height: 180px;
+		}
+
+		.container {
+			padding: 0 1rem;
+		}
+
+		.container p,
+		.container a {
+			font-size: 1rem;
 		}
 	}
 </style>

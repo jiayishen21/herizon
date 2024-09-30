@@ -58,5 +58,37 @@
 
 	a img {
 		height: 30px;
+		width: auto;
+	}
+
+	@media (max-width: 1100px) {
+		footer {
+			max-width: calc(100% - 6rem);
+			font-size: 1.1rem;
+		}
+		.container {
+			padding: 2rem 2rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		footer {
+			max-width: 100%;
+			margin-top: 5rem;
+			font-size: 1rem;
+		}
+
+		a img {
+			height: 25px;
+			width: auto;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.container {
+			flex-direction: column;
+			gap: 1rem;
+			align-items: start;
+		}
 	}
 </style>

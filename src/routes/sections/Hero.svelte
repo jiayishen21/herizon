@@ -71,6 +71,10 @@
 	}
 
 	@media (max-width: 768px) {
+		.hero-container {
+			margin-bottom: 0;
+		}
+
 		.hero-container h1 {
 			font-size: 3rem;
 		}
@@ -80,6 +84,10 @@
 			width: 100%;
 			padding: 0 2rem;
 		}
+
+		.hero img {
+			height: 400px;
+		}
 	}
 
 	@media (max-width: 600px) {
@@ -88,6 +96,7 @@
 		}
 
 		.hero-container h4 {
+			bottom: 3rem;
 			font-size: 1.2rem;
 			width: 100%;
 			padding: 0 2rem;

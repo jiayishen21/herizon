@@ -78,7 +78,8 @@
 	.faq-container h2 {
 		position: absolute;
 		bottom: 3rem;
-		left: 7rem;
+		left: 0;
+		padding: 0 7rem;
 		font-size: 3rem;
 		font-weight: 700;
 		filter: drop-shadow(0 1px 4px var(--color-shadow-0));
@@ -136,5 +137,83 @@
 
 	.answer p {
 		margin-top: 1rem;
+	}
+
+	@media (max-width: 1300px) {
+		.faq-container h2 {
+			font-size: 2.5rem;
+			padding: 0 5rem;
+		}
+
+		.faq-container img {
+			height: 200px;
+		}
+
+		.question {
+			font-size: 1.4rem;
+		}
+	}
+
+	@media (max-width: 1100px) {
+		.faq-container h2 {
+			padding: 0 3rem;
+		}
+	}
+
+	@media (max-width: 950px) {
+		.faq-container h2 {
+			font-size: 2rem;
+			bottom: 2rem;
+		}
+
+		.faq-container img {
+			height: 150px;
+		}
+
+		.question {
+			font-size: 1.3rem;
+		}
+
+		.toggle-question {
+			top: -1.1rem;
+			font-size: 3.3rem;
+		}
+
+		.answer {
+			font-size: 1rem;
+		}
+
+		li {
+			padding: 1rem 2rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.faq-container h2 {
+			font-size: 1.75rem;
+		}
+
+		.question {
+			font-size: 1.2rem;
+		}
+
+		.toggle-wrapper {
+			padding-right: 1.8rem;
+		}
+
+		.toggle-question {
+			top: -1.2rem;
+			font-size: 3rem;
+		}
+
+		li {
+			padding: 1rem 1.5rem;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.faq-container h2 {
+			padding: 0 2rem;
+		}
 	}
 </style>

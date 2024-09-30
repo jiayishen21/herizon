@@ -135,12 +135,30 @@
 			font-size: 1.75rem;
 		}
 
+		.container {
+			padding: 0 2rem;
+		}
+
+		.sponsor-banner img {
+			height: 180px;
+		}
+
 		.container p {
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 		}
 
 		.desc {
 			padding: 0;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.container {
+			padding: 0 1rem;
+		}
+
+		.container p {
+			font-size: 1rem;
 		}
 	}
 </style>
