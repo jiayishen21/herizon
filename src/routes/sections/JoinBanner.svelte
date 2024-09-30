@@ -13,7 +13,7 @@
 
 		<h1>Join our community of entrepreneurs.</h1>
 
-		<a href="youtube.com">Membership applications here</a>
+		<a href="/">Membership applications here</a>
 
 		<div class="learn-more">
 			<p>Learn more</p>

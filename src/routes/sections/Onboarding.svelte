@@ -21,7 +21,7 @@
 				</picture>
 				<div class="image-desc">
 					<p>
-						Fill out our <a href="youtube.com" target="_blank">member application</a> (3 minutes ETA).
+						Fill out our <a href="/" target="_blank">member application</a> (3 minutes ETA).
 					</p>
 				</div>
 			</div>
