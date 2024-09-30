@@ -94,7 +94,7 @@
 	}
 
 	h4 {
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		font-weight: 400;
 		font-family: var(--font-mono);
 	}
@@ -127,6 +127,7 @@
 	.image-container img {
 		width: 100%;
 		height: 140px;
+		object-fit: cover;
 		border-radius: 10px;
 	}
 
@@ -134,6 +135,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		height: 100%;
 		background: rgba(255, 255, 255, 0.25);
 		backdrop-filter: blur(20px);
 		font-size: 1.2rem;
@@ -147,5 +149,69 @@
 
 	.image-container:hover .image-desc {
 		opacity: 1;
+	}
+
+	@media (max-width: 1300px) {
+		h2 {
+			font-size: 2.5rem;
+		}
+
+		.subtitle {
+			font-size: 1.1rem;
+		}
+
+		h4 {
+			font-size: 1.4rem;
+		}
+	}
+
+	@media (max-width: 950px) {
+		h2 {
+			font-size: 2rem;
+		}
+
+		.subtitle {
+			font-size: 1rem;
+		}
+
+		h4 {
+			font-size: 1.3rem;
+		}
+
+		.image-container .image-desc {
+			font-size: 1.1rem;
+			padding: 1rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		h2 {
+			font-size: 1.75rem;
+		}
+
+		h4 {
+			font-size: 1.1rem;
+		}
+
+		.subtitle {
+			display: none;
+		}
+
+		.image-container img {
+			display: none;
+		}
+
+		.image-container .image-desc {
+			position: relative;
+			background: none;
+			margin-top: 1rem;
+			font-size: 1rem;
+			opacity: 1;
+			padding: 0;
+		}
+
+		.timeline {
+			margin: 2rem auto;
+		}
 	}
 </style>

@@ -11,7 +11,7 @@
 			<img src={gradient2_fallback} alt="herizon hero" />
 		</picture>
 
-		<h2>Join our community of entrepreneurs.</h2>
+		<h1>Join our community of entrepreneurs.</h1>
 
 		<a href="youtube.com">Membership applications here</a>
 
@@ -41,7 +41,7 @@
 		border-radius: 10px;
 	}
 
-	.hero-container h2 {
+	.hero-container h1 {
 		max-width: 850px;
 		position: absolute;
 		top: 7rem;
@@ -78,5 +78,77 @@
 		margin-top: 0.5rem;
 		width: 70%;
 		height: auto;
+	}
+
+	@media (max-width: 1300px) {
+		.hero-container h1 {
+			left: 6rem;
+			padding-right: 6rem;
+		}
+
+		.hero-container a {
+			left: 6rem;
+			font-size: 1.3rem;
+		}
+
+		.learn-more {
+			font-size: 1.3rem;
+		}
+	}
+
+	@media (max-width: 1100px) {
+		.hero-container a {
+			font-size: 1.3rem;
+		}
+
+		.learn-more {
+			font-size: 1.3rem;
+		}
+	}
+
+	@media (max-width: 950px) {
+		.hero-container h1 {
+			font-size: 2rem;
+			left: 4rem;
+			padding-right: 4rem;
+		}
+
+		.hero-container a {
+			top: 15rem;
+			left: 4rem;
+			padding-right: 4rem;
+			font-size: 1.2rem;
+		}
+
+		.learn-more {
+			font-size: 1.2rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.hero img {
+			height: 400px;
+		}
+
+		.hero-container h1 {
+			top: 5rem;
+			font-size: 1.75rem;
+		}
+
+		.learn-more {
+			display: none;
+		}
+
+		.hero-container a {
+			font-size: 1.1rem;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.hero-container h1,
+		.hero-container a {
+			left: 2rem;
+			padding-right: 2rem;
+		}
 	}
 </style>

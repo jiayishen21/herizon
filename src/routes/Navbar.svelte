@@ -10,7 +10,7 @@
 
 		<ul>
 			<li>
-				<a href="contact">Contact</a>
+				<a href="mailto:herizon@gmail.com" target="_blank">Contact</a>
 			</li>
 			<li>
 				<a href="join">Join us</a>
