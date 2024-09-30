@@ -57,4 +57,40 @@
 		text-align: center;
 		filter: drop-shadow(0 1px 2px var(--color-shadow-0));
 	}
+
+	@media (max-width: 1300px) {
+		.hero-container h1 {
+			font-size: 3.5rem;
+		}
+
+		.hero-container h4 {
+			font-size: 1.8rem;
+			width: 100%;
+			padding: 0 8rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.hero-container h1 {
+			font-size: 3rem;
+		}
+
+		.hero-container h4 {
+			font-size: 1.5rem;
+			width: 100%;
+			padding: 0 2rem;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.hero-container h1 {
+			font-size: 2.5rem;
+		}
+
+		.hero-container h4 {
+			font-size: 1.2rem;
+			width: 100%;
+			padding: 0 2rem;
+		}
+	}
 </style>

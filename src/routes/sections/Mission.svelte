@@ -5,7 +5,7 @@
 
 <section>
 	<div class="container">
-		<h2>
+		<h2 class="container-heading">
 			Becoming
 			<div class="words">
 				<span>great.</span>
@@ -31,6 +31,16 @@
 			<img src={gradient1_fallback} alt="join herizon" />
 		</picture>
 		<a href="/join">Join today</a>
+		<h2 class="banner-heading">
+			Becoming
+			<div class="words">
+				<span>great.</span>
+				<span>tenatious.</span>
+				<span>curious.</span>
+				<span>resourceful.</span>
+				<span>hungry.</span>
+			</div>
+		</h2>
 	</div>
 </section>
 
@@ -78,12 +88,12 @@
 	.words span {
 		display: block;
 		height: 100%;
-		padding-left: 10px;
 		animation: spin-words 10s infinite;
 	}
 
 	.words {
 		overflow: hidden;
+		padding-left: 10px;
 	}
 
 	.join-us-banner {
@@ -107,9 +117,15 @@
 		bottom: 3rem;
 		left: 50%;
 		transform: translate(-50%, 0);
-		font-size: 2.5rem;
+		font-size: 3rem;
+		width: 100%;
+		text-align: center;
 		font-weight: 700;
 		color: var(--color-white-0);
+	}
+
+	.banner-heading {
+		display: none;
 	}
 
 	@keyframes spin-words {
@@ -145,6 +161,148 @@
 		}
 		100% {
 			transform: translateY(-12%);
+		}
+	}
+
+	@media (max-width: 1300px) {
+		section {
+			grid-template-columns: 14fr 8fr;
+		}
+
+		.container {
+			padding-left: 2rem;
+			padding-right: 4rem;
+		}
+
+		.container p {
+			font-size: 1.4rem;
+		}
+
+		.container a {
+			font-size: 1.4rem;
+		}
+
+		.join-us a {
+			font-size: 2.5rem;
+		}
+
+		.join-us-banner img {
+			height: 500px;
+		}
+	}
+
+	@media (max-width: 1100px) {
+		.join-us a {
+			font-size: 2rem;
+		}
+
+		.join-us-banner img {
+			height: 450px;
+		}
+
+		.container p {
+			font-size: 1.3rem;
+		}
+
+		.container a {
+			font-size: 1.3rem;
+		}
+
+		.container {
+			padding-right: 2rem;
+		}
+
+		h2 {
+			flex-direction: column;
+			height: 150px;
+		}
+
+		.words {
+			height: 80px;
+			padding-left: 0;
+		}
+	}
+
+	@media (max-width: 950px) {
+		h2 {
+			font-size: 3rem;
+			flex-direction: row;
+			height: 80px;
+		}
+
+		.words {
+			height: 100px;
+			padding-left: 10px;
+		}
+
+		.container p {
+			font-size: 1.2rem;
+		}
+
+		.container a {
+			margin-top: 1.5rem;
+			font-size: 1.2rem;
+		}
+
+		.join-us-banner img {
+			height: 250px;
+		}
+
+		.join-us a {
+			display: none;
+		}
+
+		section {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		.banner-heading {
+			display: flex;
+			position: absolute;
+			bottom: 2rem;
+			left: 3rem;
+			color: var(--color-white-0);
+		}
+
+		.container-heading {
+			display: none;
+		}
+
+		.desc {
+			margin-top: 2rem;
+		}
+	}
+
+	@media (max-width: 800px) {
+		.banner-heading {
+			flex-direction: column;
+			height: 130px;
+		}
+
+		.words {
+			height: 80px;
+			padding-left: 0;
+		}
+
+		.desc {
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.banner-heading {
+			font-size: 2rem;
+			height: 100px;
+			bottom: 1rem;
+		}
+
+		.words {
+			height: 60px;
+		}
+
+		.join-us-banner img {
+			height: 180px;
 		}
 	}
 </style>

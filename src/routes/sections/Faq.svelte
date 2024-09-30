@@ -79,7 +79,7 @@
 		position: absolute;
 		bottom: 3rem;
 		left: 7rem;
-		font-size: 2.5rem;
+		font-size: 3rem;
 		font-weight: 700;
 		filter: drop-shadow(0 1px 4px var(--color-shadow-0));
 	}

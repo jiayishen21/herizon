@@ -1,5 +1,6 @@
 <script>
 	import JoinBanner from '../sections/JoinBanner.svelte';
+	import Onboarding from '../sections/Onboarding.svelte';
 </script>
 
 <svelte:head>
@@ -8,3 +9,4 @@
 </svelte:head>
 
 <JoinBanner />
+<Onboarding />

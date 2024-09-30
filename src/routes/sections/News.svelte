@@ -7,6 +7,13 @@
 	<h2>Inspiration from around the world.</h2>
 
 	<div class="news-grid">
+		<div class="picture-container wide-block wide-block-0">
+			<picture>
+				<source srcset={michelle_zatlyn} type="image/webp" />
+				<img src={michelle_zatlyn_fallback} alt="michelle zatlyn" />
+			</picture>
+		</div>
+
 		<div class="picture-container tall-block">
 			<picture>
 				<source srcset={michelle_zatlyn} type="image/webp" />
@@ -19,12 +26,6 @@
 			</div>
 		</div>
 
-		<div class="picture-container wide-block wide-block-0">
-			<picture>
-				<source srcset={michelle_zatlyn} type="image/webp" />
-				<img src={michelle_zatlyn_fallback} alt="michelle zatlyn" />
-			</picture>
-		</div>
 		<div class="picture-container wide-block wide-block-1">
 			<picture>
 				<source srcset={michelle_zatlyn} type="image/webp" />
@@ -36,11 +37,11 @@
 
 <style>
 	section {
-		margin-top: 2.5rem;
+		margin-top: 3rem;
 	}
 
 	h2 {
-		font-size: 2.5rem;
+		font-size: 3rem;
 		font-weight: 700;
 		text-align: center;
 	}
@@ -101,5 +102,89 @@
 		font-size: 1.7rem;
 		font-weight: 700;
 		filter: drop-shadow(0 1px 4px var(--color-shadow-0));
+	}
+
+	@media (max-width: 1300px) {
+		.news-grid {
+			grid-template-columns: 8fr 6fr 6fr;
+			height: 500px;
+		}
+
+		h2 {
+			font-size: 2.5rem;
+		}
+
+		.picture-container .desc {
+			font-size: 1.5rem;
+		}
+
+		.tall-block {
+			height: 500px;
+		}
+
+		.wide-block {
+			height: calc(250px - 0.75rem);
+		}
+	}
+
+	@media (max-width: 950px) {
+		.news-grid {
+			height: 400px;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		.picture-container .desc {
+			font-size: 1.3rem;
+		}
+
+		.tall-block {
+			height: 400px;
+		}
+
+		.wide-block {
+			height: calc(200px - 0.75rem);
+		}
+	}
+
+	@media (max-width: 768px) {
+		h2 {
+			font-size: 1.75rem;
+		}
+
+		.picture-container .desc {
+			font-size: 1.2rem;
+		}
+
+		.news-grid {
+			display: flex;
+			flex-direction: column;
+			max-width: 400px;
+			margin: 0 auto;
+			margin-top: 1.5rem;
+			height: fit-content;
+		}
+
+		.tall-block {
+			height: 500px;
+		}
+
+		.wide-block {
+			grid-row: 1;
+			grid-column: 1;
+			height: 250px;
+		}
+	}
+
+	@media (max-width: 450px) {
+		.tall-block {
+			height: auto;
+		}
+
+		.wide-block {
+			height: auto;
+		}
 	}
 </style>
