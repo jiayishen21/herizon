@@ -21,7 +21,10 @@
 				</picture>
 				<div class="image-desc">
 					<p>
-						Fill out our <a href="/" target="_blank">member application</a> (3 minutes ETA).
+						Fill out our <a href="https://tgopp36ovob.typeform.com/to/SlUd9Xpv" target="_blank">
+							member application
+						</a>
+						(3 minutes ETA).
 					</p>
 				</div>
 			</div>

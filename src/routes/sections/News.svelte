@@ -1,20 +1,33 @@
 <script>
 	import michelle_zatlyn from '$lib/images/michelle-zatlyn.webp';
 	import michelle_zatlyn_fallback from '$lib/images/michelle-zatlyn.png';
+	import emily_weiss from '$lib/images/emily-weiss.webp';
+	import emily_weiss_fallback from '$lib/images/emily-weiss.png';
+	import sarah_blakely from '$lib/images/sarah-blakely.webp';
+	import sarah_blakely_fallback from '$lib/images/sarah-blakely.png';
 </script>
 
 <section>
 	<h2>Inspiration from around the world.</h2>
 
 	<div class="news-grid">
-		<div class="picture-container wide-block wide-block-0">
+		<a
+			href="https://www.elle.com/beauty/a60112997/emily-weiss-women-of-impact-interview-2024/"
+			class="picture-container wide-block wide-block-0"
+			target="_blank"
+		>
 			<picture>
-				<source srcset={michelle_zatlyn} type="image/webp" />
-				<img src={michelle_zatlyn_fallback} alt="michelle zatlyn" />
+				<source srcset={emily_weiss} type="image/webp" />
+				<img src={emily_weiss_fallback} alt="emily weiss" />
 			</picture>
-		</div>
 
-		<div class="picture-container tall-block">
+			<div class="desc">
+				<p>Emily Weiss,</p>
+				<p>CEO of Glossier</p>
+			</div>
+		</a>
+
+		<a href="https://youtu.be/2NgyaeCku_8" class="picture-container tall-block" target="_blank">
 			<picture>
 				<source srcset={michelle_zatlyn} type="image/webp" />
 				<img src={michelle_zatlyn_fallback} alt="michelle zatlyn" />
@@ -22,16 +35,25 @@
 
 			<div class="desc">
 				<p>Michelle Zatlyn,</p>
-				<p>COO at CloudFlare</p>
+				<p>COO of CloudFlare</p>
 			</div>
-		</div>
+		</a>
 
-		<div class="picture-container wide-block wide-block-1">
+		<a
+			href="https://www.masterclass.com/articles/sara-blakely-founder-of-spanx"
+			class="picture-container wide-block wide-block-1"
+			target="_blank"
+		>
 			<picture>
-				<source srcset={michelle_zatlyn} type="image/webp" />
-				<img src={michelle_zatlyn_fallback} alt="michelle zatlyn" />
+				<source srcset={sarah_blakely} type="image/webp" />
+				<img src={sarah_blakely_fallback} alt="sarah blakely" />
 			</picture>
-		</div>
+
+			<div class="desc">
+				<p>Sarah Blakely,</p>
+				<p>Founder of Spanx</p>
+			</div>
+		</a>
 	</div>
 </section>
 
@@ -81,6 +103,8 @@
 	picture {
 		width: 100%;
 		height: 100%;
+		border-radius: 10px;
+		overflow: hidden;
 		display: block;
 	}
 
@@ -89,19 +113,24 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: center;
+		object-position: top;
 		border-radius: 10px;
+		transition: transform 0.5s ease;
+	}
+
+	picture img:hover {
+		transform: scale(1.1);
 	}
 
 	.picture-container .desc {
 		text-align: end;
 		position: absolute;
 		bottom: 1rem;
-		right: 1rem;
 		color: var(--color-white-0);
 		font-size: 1.7rem;
 		font-weight: 700;
-		filter: drop-shadow(0 1px 4px var(--color-shadow-0));
+		filter: drop-shadow(0 1px 3px var(--color-shadow-1));
+		right: 1rem;
 	}
 
 	@media (max-width: 1300px) {

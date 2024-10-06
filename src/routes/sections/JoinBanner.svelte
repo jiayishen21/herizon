@@ -13,7 +13,9 @@
 
 		<h1>Join our community of entrepreneurs.</h1>
 
-		<a href="/">Membership applications here</a>
+		<a target="_blank" href="https://tgopp36ovob.typeform.com/to/SlUd9Xpv">
+			Membership applications here
+		</a>
 
 		<div class="learn-more">
 			<p>Learn more</p>

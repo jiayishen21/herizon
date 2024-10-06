@@ -16,5 +16,5 @@
 <News />
 <Mission />
 <Partner />
-<Events />
+<!-- <Events /> -->
 <Faq />

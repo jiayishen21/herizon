@@ -4,20 +4,34 @@
 
 	const questionAnswers = [
 		{
-			question: 'How do I become a member?',
-			answer: 'You can become a member by signing up on our website.'
+			question: 'What are the benefits for becoming a member?',
+			answer:
+				'Members benefits include access to exclusive networking events, seminars, career development opportunities, coffee chats with field-specific experts, and access to premium resources (content and tools).'
 		},
 		{
-			question: 'How do I become a member?',
-			answer: 'You can become a member by signing up on our website.'
+			question: 'Can I attend events if I’m not a member?',
+			answer:
+				'Non-members may attend selected open events, but full access to our entire range of events, workshops, and exclusive content is reserved for our members.'
 		},
 		{
-			question: 'How do I become a member?',
-			answer: 'You can become a member by signing up on our website.'
+			question: 'Is there a membership fee?',
+			answer:
+				'Membership is completely free until 2025. After that, members will gain access to even more exclusive benefits, events, and resources.'
 		},
 		{
-			question: 'How do I become a member?',
-			answer: 'You can become a member by signing up on our website.'
+			question: 'Who is eligible for a one-on-one consultation?',
+			answer:
+				'Whether you are just starting your startup, running a small business, or have already launched, you can apply for our one-on-one consultations. We are here to support you at every stage of your entrepreneurial journey.'
+		},
+		{
+			question: 'What can I expect from a one-on-one consultation?',
+			answer:
+				'Our one-on-one consultations connect you with expert professionals who offer personalized strategies and advice tailored to your unique needs. We focus on helping women entrepreneurs create uncontested market spaces, making competition irrelevant and paving the way for success.'
+		},
+		{
+			question: 'How can Herizon help with crowdfunding?',
+			answer:
+				"Whether you have an amazing idea, a ready-to-launch product, an upcoming concert, or a personal project in need of funding, we are here to help. We provide exciting reward-based crowdfunding opportunities for projects that meet our requirements. If you're interested, reach out to us without delay, and we'll be thrilled to delve into the details with you."
 		}
 	];
 
@@ -57,6 +71,10 @@
 </section>
 
 <style>
+	section {
+		margin-top: 3rem;
+	}
+
 	.faq-container {
 		margin: 3rem 0;
 		position: relative;

@@ -10,10 +10,10 @@
 
 		<ul>
 			<li>
-				<a href="mailto:herizon@gmail.com" target="_blank">Contact</a>
+				<a href="mailto:hello.herizon@gmail.com" target="_blank">Contact</a>
 			</li>
 			<li>
-				<a href="join">Join us</a>
+				<a href="/join">Join us</a>
 			</li>
 		</ul>
 	</div>
