@@ -1,6 +1,14 @@
 <script>
 	import application from '$lib/images/timeline/application.webp';
 	import application_fallback from '$lib/images/timeline/application.png';
+	import email from '$lib/images/timeline/email.webp';
+	import email_fallback from '$lib/images/timeline/email.png';
+	import meeting from '$lib/images/timeline/meeting.webp';
+	import meeting_fallback from '$lib/images/timeline/meeting.png';
+	import resource from '$lib/images/timeline/resource.webp';
+	import resource_fallback from '$lib/images/timeline/resource.png';
+	import consulting from '$lib/images/timeline/consulting.webp';
+	import consulting_fallback from '$lib/images/timeline/consulting.png';
 </script>
 
 <section>
@@ -32,6 +40,15 @@
 
 		<div class="timeline-component">
 			<h4>Step 2: Email Introduction</h4>
+			<div class="image-container">
+				<picture>
+					<source srcset={email} type="image/webp" />
+					<img src={email_fallback} alt="sign up on our form" />
+				</picture>
+				<div class="image-desc">
+					<p>We'll send an email with details about the membership process and our resources.</p>
+				</div>
+			</div>
 		</div>
 		<div class="timeline-middle">
 			<div class="timeline-point"></div>
@@ -44,10 +61,30 @@
 		</div>
 		<div class="timeline-component">
 			<h4>Step 3: “Get-to-know you” meeting</h4>
+			<div class="image-container">
+				<picture>
+					<source srcset={meeting} type="image/webp" />
+					<img src={meeting_fallback} alt="sign up on our form" />
+				</picture>
+				<div class="image-desc">
+					<p>Tell us about your business progress, plans, and needs in an initial meeting.</p>
+				</div>
+			</div>
 		</div>
 
 		<div class="timeline-component">
 			<h4>Step 4: Resource matching</h4>
+			<div class="image-container">
+				<picture>
+					<source srcset={resource} type="image/webp" />
+					<img src={resource_fallback} alt="sign up on our form" />
+				</picture>
+				<div class="image-desc">
+					<p>
+						We'll match you with resources and opportunities that align with your business goals.
+					</p>
+				</div>
+			</div>
 		</div>
 		<div class="timeline-middle">
 			<div class="timeline-point"></div>
@@ -61,6 +98,18 @@
 		</div>
 		<div class="timeline-component">
 			<h4>Step 5: Consultation & advising</h4>
+			<div class="image-container">
+				<picture>
+					<source srcset={consulting} type="image/webp" />
+					<img src={consulting_fallback} alt="sign up on our form" />
+				</picture>
+				<div class="image-desc">
+					<p>
+						Connect with industry experts and get personalized advice on your business strategy,
+						marketing, and more.
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -125,11 +174,12 @@
 
 	.image-container {
 		margin-top: 0.5rem;
+		height: 180px;
 		position: relative;
 	}
 	.image-container img {
 		width: 100%;
-		height: 140px;
+		height: 180px;
 		object-fit: cover;
 		border-radius: 10px;
 	}
@@ -139,8 +189,9 @@
 		top: 0;
 		left: 0;
 		height: 100%;
-		background: rgba(255, 255, 255, 0.25);
-		backdrop-filter: blur(20px);
+		background: var(--color-shadow-0);
+		backdrop-filter: blur(10px);
+		color: var(--color-white-0);
 		font-size: 1.2rem;
 		z-index: 1;
 		padding: 2rem;
@@ -148,6 +199,10 @@
 
 		opacity: 0;
 		transition: opacity 0.3s ease-out;
+	}
+
+	.image-desc a {
+		color: var(--color-link-0);
 	}
 
 	.image-container:hover .image-desc {
@@ -204,6 +259,10 @@
 			display: none;
 		}
 
+		.image-container {
+			height: fit-content;
+		}
+
 		.image-container .image-desc {
 			position: relative;
 			background: none;
@@ -211,6 +270,7 @@
 			font-size: 1rem;
 			opacity: 1;
 			padding: 0;
+			color: var(--color-black-0);
 		}
 
 		.timeline {

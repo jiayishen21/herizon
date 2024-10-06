@@ -5,7 +5,10 @@
 
 <svelte:head>
 	<title>herizon</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta
+		name="description"
+		content="Take 3 minutes to fill out herizon's member form to gain access to resources, join our community, and consult with industry professionals."
+	/>
 </svelte:head>
 
 <JoinBanner />

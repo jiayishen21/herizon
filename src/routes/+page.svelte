@@ -9,7 +9,10 @@
 
 <svelte:head>
 	<title>herizon</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta
+		name="description"
+		content="herizon supports female entrepreneurs in creating small businesses, researching their market, and connecting with industry professionals."
+	/>
 </svelte:head>
 
 <Hero />
